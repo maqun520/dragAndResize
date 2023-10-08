@@ -1,0 +1,65 @@
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  cursor: move;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+
+.top-left {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+
+.top {
+  top: -5px;
+  left: calc(50% - 5px);
+  cursor: ns-resize;
+}
+
+.top-right {
+  top: -5px;
+  right: -5px;
+  cursor: ne-resize;
+}
+
+.right {
+  top: calc(50% - 5px);
+  right: -5px;
+  cursor: ew-resize;
+}
+
+.bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+
+.bottom {
+  bottom: -5px;
+  left: calc(50% - 5px);
+  cursor: ns-resize;
+}
+
+.bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+
+.left {
+  top: calc(50% - 5px);
+  left: -5px;
+  cursor: ew-resize;
+}
